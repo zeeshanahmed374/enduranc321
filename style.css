@@ -709,10 +709,16 @@ section {
 
 .contact-info {
     text-align: center;
-    margin-top: 2rem;
+    margin: 3rem auto 0;
     font-size: 1rem;
     color: #222;
+    max-width: 600px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
 
 .contact-info a {
     color: #00aaff;
@@ -761,3 +767,4 @@ section {
         padding-right: 1rem;
     }
 }
+
