@@ -10,8 +10,11 @@
     <meta name="description"
         content="Endurance Ride Pakistan — Saddled for the wild. Racing through every corner of Pakistan." />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="enduranclogo2.png" type="image/png" sizes="32x32">
+
 
 </head>
+<button id="backToTop">↑</button>
 
 <body>
     <header class="site-header">
@@ -86,57 +89,48 @@
             <img src="horse6.jpg" alt="">
         </div>
     </section>
+    <section id="bookings">
+        <h2>Horse Riding Registration</h2>
+        <p>Join our riding school and adventures. Fill out the form below to register — we’ll get back to you soon.</p>
 
-    <section class="section" id="bookings">
-        <h2>Horse Riding School Bookings</h2>
-        <p>Join our Horse Riding School and experience professional lessons.<br>
-            Fill out the form below to register — we’ll contact you soon.</p>
+        <form id="bookingForm" action="https://formspree.io/f/xjkapwqr" method="POST">
+            <label>Name</label>
+            <input type="text" name="name" required>
 
-        <form id="bookingForm" action="https://formspree.io/f/meorpkgv" method="POST">
-            <label>
-                Full Name
-                <input type="text" name="name" required>
-            </label>
+            <label>Email</label>
+            <input type="email" name="email" required>
 
-            <label>
-                Email
-                <input type="email" name="email" required>
-            </label>
+            <label>Phone</label>
+            <input type="tel" name="phone" required>
 
-            <label>
-                Phone Number
-                <input type="tel" name="phone" required>
-            </label>
-
-            <label>
-                Message or Special Request
-                <textarea name="message" rows="4" placeholder="Any special instructions?"></textarea>
-            </label>
-
-            <button type="submit" class="btn">Submit Booking</button>
+            <button type="submit">Register</button>
             <p id="bookingStatus" class="form-status"></p>
+
         </form>
+
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>📞 WhatsApp: <a href="https://wa.me/923455131782" target="_blank">+92 345 5131782</a></p>
+            <p>📧 Email: <a href="mailto:zeeshanahmed89you@gmail.com">zeeshanahmed89you@gmail.com</a></p>
+        </div>
     </section>
+
 
     <footer class="site-footer">
         <div class="wrap">
             <p>© <span id="year"></span> Endurance Ride Pakistan · One Nation. One Saddle.</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/endurance_ridepk/" target="_blank" class="insta-link">
-                    <img src="instagram.jpg" alt="Instagram" class="insta-icon">
-                </a>
-                <div class="farmhouse-location">
-                    <h3>📍 Location of Farmhouse</h3>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1243.4081746174218!2d72.9224917254981!3d33.695968611398484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbd810a9f7a6f%3A0x7383a567a6b68557!2sShahzad%20tareen%20farm%20house!5e0!3m2!1sen!2s!4v1760443878743!5m2!1sen!2s"
-                        width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen=""
-                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-
-
-
+            <div class="farmhouse-location">
+                <h3>📍 Location of Farmhouse</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1243.4081746174218!2d72.9224917254981!3d33.695968611398484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbd810a9f7a6f%3A0x7383a567a6b68557!2sShahzad%20tareen%20farm%20house!5e0!3m2!1sen!2s!4v1760443878743!5m2!1sen!2s"
+                    width="100%" height="300" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
+
+
+        </div>
         </div>
     </footer>
 
